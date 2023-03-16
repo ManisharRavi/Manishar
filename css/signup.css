@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.container .forms{
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+.container .form-signup{
+    width: 50%;
+    padding: 30px;
+    background-color: whitesmoke;
+    transition: margin-left 0.18s ease;
+}
+
+.container.active .signup{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+.container.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+.container .forms{
+    height: 600px;
+}
+.container .form-signup .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form-signup .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #967bb6;
+    border-radius: 25px;
+}
+
+.form-signup .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #3a3b3c;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #967bb9;
+}
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3a3b3c;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+.input-field input:is(:focus, :valid) ~ i{
+    color: #967bb9;
+}
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.form-signup .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content a{
+    color: #967bb9;
+}
+.checkbox-content input{
+    margin-right: 10px;
+    accent-color: #967bb6;
+}
+.form-signup .text{
+    color: #3a3b3c;
+    font-size: 14px;
+}
+.form-signup a.text{
+    color: #3a3b3c;
+    text-decoration: none;
+}
+.form-signup a:hover{
+    text-decoration: underline;
+}
+.form-signup .button{
+    margin-top: 35px;
+}
+.form-signup .button input{
+    border: none;
+    color: #3a3b3c;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #967bb6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-signup .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
