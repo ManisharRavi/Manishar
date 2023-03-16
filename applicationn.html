@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/application.css">
+    <title>Need a mechanic?</title> 
+</head>
+<body>
+    <div class="container">
+        <header>Application Form</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Name <a href="#">* </a>:</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number <a href="#">* </a>:</label>
+                            <input type="text" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address <a href="#">*</a>:</label>
+                            <textarea placeholder="Enter your address" required></textarea>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Pincode:</label>
+                            <input type="text" placeholder="Enter your pincode" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>District:</label>
+                            <input type="text" placeholder="Enter your District" required>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+
+            <div class="form second">
+                <div class="details product">
+                    <span class="title">Product Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Product type <a href="#">* </a>:</label>
+                            <select required>
+                                <option disabled selected>Select Type</option>
+                                <option>Mobiles</option>
+                                <option>Laptops</option>
+                                <option>Cars</option>
+                                <option>Bikes</option>
+                                <option>Home Appliances</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Model Name <a href="#">* </a>:</label>
+                            <input type="text" placeholder="Enter Model name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>About:</label>
+                            <textarea placeholder="Enter product problem" required> </textarea>
+                        </div>
+                        
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="agreement">
+                            <label for="agreement" class="text">Are you going to sell this product in our website? </label>
+                        </div>
+
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="need">
+                            <label for="need" class="text">Do you need technician urgently?</label>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="js/application.js"></script>
+</body>
+</html>
